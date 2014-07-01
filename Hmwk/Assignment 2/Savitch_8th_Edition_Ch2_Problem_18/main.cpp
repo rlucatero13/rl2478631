@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
     //Acquiring Inputs
     cout << "Calculate how many candy bars a day you can eat." << endl;
     cout << "What is your gender M/F" << endl;
-    cin >> sex;
+    cin >> gen;
     cout << "What is your weight in lbs?" << endl;
     cin >> wtL;
     cout << "What is your height in Inches?" << endl;
@@ -41,16 +41,15 @@ int main(int argc, char** argv) {
     cin >> ageY;
     
     //Calculate the BMR
-    if (sex=='F'||sex=='f'){
+    if (gen=='F'||gen=='f'){
         bmr=655+4.3*wtL+4.7*htI-4.7ageY;
-    }else if (sex=='M'||sex=='m'){
+    }else if (gen=='M'||gen=='m'){
         bmr=66+6.3*wtL+12.9*htI-6.8ageY;
     }else{
         cout<<"Gender Invalid"<<endl;
     }
     
     //Output Results
-    
 
     return 0;
 }

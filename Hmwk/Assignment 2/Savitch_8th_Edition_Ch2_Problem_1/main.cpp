@@ -25,10 +25,25 @@ int main(int argc, char** argv) {
     //Inputs
     float ounces;
     float crlBox;
+    float BoxOz;
     //Outputs
+    float nBoxes;
+    float mTons;
+    float TotalT;
     
+    //Receive Inputs
+    mTons = 3.5e-4f;
+    cout << "Enter amount of Oz. of the Cereal Box" << endl;
+    cin >> ounces;
     
-    //
+    //Calculations
+    BoxOz= ounces*mTons;
+    TotalT= BoxOz*OZ2TONS;
+    
+    //Output
+    cout << "The weight of the box is equal to " << BoxOz << " metric tons." << endl;
+    cout << TotalT << " boxes are needed to yield 1 metric ton of cereal." << endl;
+    
     
     return 0;
 }
