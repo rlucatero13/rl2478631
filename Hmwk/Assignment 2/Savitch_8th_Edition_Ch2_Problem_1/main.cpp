@@ -13,6 +13,7 @@ using namespace std;
 //User Libraries
 
 //Global Constant
+const float OZ2TONS = 3.527392e4f;
 
 //Function Prototype
 
@@ -22,7 +23,12 @@ int main(int argc, char** argv) {
 
     //Declare Variables
     //Inputs
+    float ounces;
+    float crlBox;
+    //Outputs
     
+    
+    //
     
     return 0;
 }
